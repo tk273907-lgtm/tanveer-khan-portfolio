@@ -1,201 +1,399 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tanveer Khan — BCA AI/ML student, developer, and aspiring AI engineer.">
-  <title>Tanveer Khan | AI/ML Developer Portfolio</title>
+  <meta name="description" content="Tanveer Khan — BCA AI/ML student, developer and aspiring AI engineer.">
+  <title>Tanveer Khan — AI/ML Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="logo" href="#home">TK<span>.</span></a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">☰</button>
-      <div class="nav-links" id="nav-links">
+  <div class="noise"></div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark">TK</span>
+        <span>Tanveer<span class="brand-dot">.</span></span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+      <nav id="navMenu">
+        <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
         <a href="#journey">Journey</a>
         <a href="#contact">Contact</a>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme">◐</button>
-      </div>
-    </nav>
+      </nav>
+
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+    </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
+  <main id="home">
+
+    <!-- HERO -->
+    <section class="hero">
       <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Hello, I'm</p>
-          <h1>Tanveer Khan<span class="accent">.</span></h1>
-          <h2>BCA AI/ML Student <span>|</span> Aspiring AI Engineer</h2>
-          <p class="hero-copy">
-            I am building my foundation in software development, Python, data science,
-            web development, and machine learning. I learn by turning ideas into practical projects.
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            Available for learning & collaboration
+          </div>
+
+          <p class="hero-kicker">BCA AI/ML Student · Developer</p>
+
+          <h1>
+            Building ideas into
+            <span class="gradient-text">intelligent products.</span>
+          </h1>
+
+          <p class="hero-description">
+            I'm <strong>Tanveer Khan</strong>, an AI/ML-focused developer learning
+            Python, data science, machine learning and modern web development.
+            I learn by building real projects.
           </p>
-          <div class="actions">
-            <a class="btn primary" href="#projects">View Projects <span>↗</span></a>
-            <a class="btn secondary" href="#skills">My Skills</a>
-            <a class="text-link" href="#contact">Let's Connect ↗</a>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore Projects <span>↗</span>
+            </a>
+            <a href="https://github.com/tk273907-lgtm" target="_blank" rel="noopener" class="btn btn-ghost">
+              GitHub
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <div>
+              <strong>BCA</strong>
+              <span>AI/ML</span>
+            </div>
+            <div>
+              <strong>Python</strong>
+              <span>Core Stack</span>
+            </div>
+            <div>
+              <strong>AI</strong>
+              <span>Future Focus</span>
+            </div>
           </div>
         </div>
 
-        <div class="hero-art" aria-label="Decorative code card">
-          <div class="code-window">
-            <div class="dots"><i></i><i></i><i></i></div>
-            <pre><span class="purple">const</span> developer = {
-  name: <span class="green">"Tanveer Khan"</span>,
-  focus: <span class="green">"AI / ML"</span>,
-  python: <span class="orange">true</span>,
-  curiosity: <span class="orange">Infinity</span>
-};</pre>
+        <div class="hero-visual">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+
+          <div class="terminal-card">
+            <div class="terminal-top">
+              <div class="terminal-dots">
+                <i></i><i></i><i></i>
+              </div>
+              <span>tanveer.py</span>
+              <span class="terminal-status">●</span>
+            </div>
+
+            <div class="code-body">
+              <p><span class="line-no">01</span> <span class="purple">class</span> <span class="cyan">Developer</span>:</p>
+              <p><span class="line-no">02</span> &nbsp;&nbsp;<span class="purple">def</span> <span class="cyan">__init__</span>(self):</p>
+              <p><span class="line-no">03</span> &nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="green">"Tanveer Khan"</span></p>
+              <p><span class="line-no">04</span> &nbsp;&nbsp;&nbsp;&nbsp;self.focus = <span class="green">"AI / ML"</span></p>
+              <p><span class="line-no">05</span> &nbsp;&nbsp;&nbsp;&nbsp;self.python = <span class="orange">True</span></p>
+              <p><span class="line-no">06</span> &nbsp;&nbsp;&nbsp;&nbsp;self.curiosity = <span class="orange">float("inf")</span></p>
+              <p><span class="line-no">07</span></p>
+              <p><span class="line-no">08</span> <span class="comment"># Keep learning. Keep building.</span></p>
+              <p><span class="line-no">09</span> <span class="purple">while</span> <span class="orange">True</span>:</p>
+              <p><span class="line-no">10</span> &nbsp;&nbsp;build(<span class="green">"something useful"</span>)<span class="cursor">_</span></p>
+            </div>
+
+            <div class="terminal-footer">
+              <span>● main</span>
+              <span>UTF-8</span>
+              <span>Python</span>
+            </div>
+          </div>
+
+          <div class="floating-card card-ai">
+            <span class="float-icon">✦</span>
+            <div>
+              <b>AI / ML</b>
+              <small>Learning path</small>
+            </div>
+          </div>
+
+          <div class="floating-card card-python">
+            <span class="float-icon">Py</span>
+            <div>
+              <b>Python</b>
+              <small>Building with it</small>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="container two-col">
-        <div>
-          <p class="eyebrow">01 / About me</p>
-          <h2>Learning today. Building for tomorrow.</h2>
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-label">
+          <span>01</span>
+          <p>About me</p>
         </div>
-        <div>
-          <p>
-            I am a BCA student specializing in Artificial Intelligence and Machine Learning
-            at Career Point University, Kota. My goal is to become an AI engineer and build
-            useful, real-world software with AI.
-          </p>
-          <p>
-            My current learning path combines Python programming, NumPy, Pandas, machine
-            learning fundamentals, Django, HTML, CSS, JavaScript, Git, and GitHub. I prefer
-            practical learning—understanding a concept and then using it in a project.
-          </p>
+
+        <div class="about-grid">
+          <div>
+            <h2>Curious mind.<br><span class="muted-text">Builder mindset.</span></h2>
+          </div>
+
+          <div class="about-copy">
+            <p>
+              I'm currently pursuing a <strong>BCA with an AI/ML specialization</strong>
+              at Career Point University, Kota. My focus is to understand technology
+              from fundamentals and turn that knowledge into useful software.
+            </p>
+            <p>
+              My learning journey covers Python, NumPy, Pandas, Machine Learning,
+              Django, HTML, CSS, JavaScript, Git and GitHub. Instead of only
+              collecting tutorials, I try to convert what I learn into projects.
+            </p>
+
+            <div class="about-tags">
+              <span>Problem Solving</span>
+              <span>Learning by Building</span>
+              <span>AI Enthusiast</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="skills">
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
       <div class="container">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">02 / Toolkit</p>
-            <h2>Technologies I work with</h2>
+            <div class="section-label">
+              <span>02</span>
+              <p>Technical toolkit</p>
+            </div>
+            <h2>Tools I use to <span class="gradient-text">build.</span></h2>
           </div>
-          <p class="muted">A growing developer and AI/ML toolkit.</p>
+          <p class="section-note">Always learning. Always improving.</p>
         </div>
+
         <div class="skills-grid">
-          <span>Python</span><span>NumPy</span><span>Pandas</span>
-          <span>Machine Learning</span><span>HTML5</span><span>CSS3</span>
-          <span>JavaScript</span><span>Django</span><span>Git</span>
-          <span>GitHub</span><span>C / C++</span><span>VS Code</span>
+          <div class="skill-card featured">
+            <div class="skill-icon">Py</div>
+            <h3>Python</h3>
+            <p>Programming, automation, data handling and the foundation of my AI/ML journey.</p>
+            <div class="skill-bar"><span style="width: 82%"></span></div>
+            <small>Core language</small>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">NP</div>
+            <h3>NumPy</h3>
+            <p>Arrays, numerical operations and mathematical computing.</p>
+            <div class="skill-bar"><span style="width: 72%"></span></div>
+            <small>Learning</small>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">Pd</div>
+            <h3>Pandas</h3>
+            <p>DataFrames, data cleaning, analysis and manipulation.</p>
+            <div class="skill-bar"><span style="width: 68%"></span></div>
+            <small>Learning</small>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">ML</div>
+            <h3>Machine Learning</h3>
+            <p>Learning algorithms, mathematics and practical ML workflows.</p>
+            <div class="skill-bar"><span style="width: 52%"></span></div>
+            <small>Growing</small>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Web Development</h3>
+            <p>HTML, CSS and JavaScript for responsive interfaces.</p>
+            <div class="skill-bar"><span style="width: 78%"></span></div>
+            <small>Building</small>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">DJ</div>
+            <h3>Django</h3>
+            <p>Python backend development and full-stack project building.</p>
+            <div class="skill-bar"><span style="width: 58%"></span></div>
+            <small>Growing</small>
+          </div>
+        </div>
+
+        <div class="tech-strip">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>C</span>
+          <span>C++</span>
+          <span>VS Code</span>
+          <span>Jupyter</span>
         </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
       <div class="container">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">03 / Selected work</p>
-            <h2>Projects & ideas</h2>
+            <div class="section-label">
+              <span>03</span>
+              <p>Selected work</p>
+            </div>
+            <h2>Projects <span class="gradient-text">coming soon.</span></h2>
           </div>
-          <div class="filters" role="group" aria-label="Filter projects">
-            <button class="filter active" data-filter="all">All</button>
-            <button class="filter" data-filter="web">Web</button>
-            <button class="filter" data-filter="python">Python / AI</button>
-            <button class="filter" data-filter="django">Django</button>
-          </div>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card" data-category="web">
-            <div class="project-number">01</div>
-            <h3>TypoWorker</h3>
-            <p>
-              A local-services marketplace concept connecting clients with workers based
-              on skills and location. The idea focuses on profiles, service discovery,
-              hiring requests, and worker opportunities.
-            </p>
-            <div class="tags"><span>Web</span><span>JavaScript</span><span>Marketplace</span></div>
-            <div class="card-links"><span class="demo-label">PERSONAL PROJECT</span><span>In Development</span></div>
-          </article>
-
-          <article class="project-card" data-category="django">
-            <div class="project-number">02</div>
-            <h3>LUXE E-Commerce</h3>
-            <p>
-              A premium fashion e-commerce project built while learning Django.
-              The project explores product pages, store structure, navigation,
-              and backend-driven web development.
-            </p>
-            <div class="tags"><span>Django</span><span>Python</span><span>HTML/CSS</span></div>
-            <div class="card-links"><span class="demo-label">PERSONAL PROJECT</span><span>Learning Build</span></div>
-          </article>
-
-          <article class="project-card" data-category="python">
-            <div class="project-number">03</div>
-            <h3>Python Data & ML Practice</h3>
-            <p>
-              Hands-on learning with Python, NumPy, Pandas, data manipulation,
-              mathematical foundations, and machine-learning concepts as part of
-              my AI/ML learning journey.
-            </p>
-            <div class="tags"><span>Python</span><span>NumPy</span><span>Pandas</span><span>ML</span></div>
-            <div class="card-links"><span class="demo-label">LEARNING PROJECT</span><span>Ongoing</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="education">
-      <div class="container two-col">
-        <div>
-          <p class="eyebrow">04 / Education</p>
-          <h2>Building a strong AI/ML foundation.</h2>
-        </div>
-        <div class="timeline-card">
-          <span class="timeline-dot"></span>
-          <p class="muted">Current education</p>
-          <h3>BCA — AI/ML Specialization</h3>
-          <p>Career Point University, Kota</p>
-          <p class="small-note">
-            Focus areas: programming, data handling, web development, mathematics,
-            machine learning, and AI.
+          <p class="section-note">
+            I'm currently building and refining projects. Selected work will be added here soon.
           </p>
         </div>
-      </div>
-    </section>
 
-    <section class="section" id="journey">
-      <div class="container">
-        <p class="eyebrow">05 / Learning journey</p>
-        <h2>From fundamentals to AI engineering.</h2>
-        <div class="journey-grid">
-          <div><b>01</b><h3>Programming</h3><p>Strengthening Python, C/C++, problem solving, and core programming concepts.</p></div>
-          <div><b>02</b><h3>Web Development</h3><p>Building interfaces with HTML, CSS, JavaScript and backend projects with Django.</p></div>
-          <div><b>03</b><h3>Data & ML</h3><p>Learning NumPy, Pandas, mathematics, data analysis, and machine-learning fundamentals.</p></div>
-          <div><b>04</b><h3>AI Engineering</h3><p>Long-term goal: build practical AI systems and turn ideas into useful products.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section" id="contact">
-      <div class="container contact-box">
-        <div>
-          <p class="eyebrow">06 / Get in touch</p>
-          <h2>Let's build something useful.</h2>
+        <div class="empty-projects">
+          <div class="empty-icon">&lt;/&gt;</div>
+          <h3>Building in progress</h3>
           <p>
-            I'm always interested in learning, experimenting with technology,
-            and building practical projects around software and AI.
+            I'm working on projects that I can showcase with real demos and repositories.
+            This section will be updated as they become ready.
+          </p>
+          <a href="https://github.com/tk273907-lgtm" target="_blank" rel="noopener" class="btn btn-ghost">
+            View GitHub <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION / JOURNEY -->
+    <section class="section journey" id="journey">
+      <div class="container">
+        <div class="section-label">
+          <span>04</span>
+          <p>My journey</p>
+        </div>
+
+        <div class="journey-header">
+          <h2>From fundamentals<br>to <span class="gradient-text">AI engineering.</span></h2>
+          <p>
+            A practical path focused on understanding the fundamentals,
+            building projects, and gradually moving toward advanced AI systems.
           </p>
         </div>
-        <div class="contact-links">
-          <a href="#home">Portfolio <span>↗</span></a>
-          <a href="https://github.com/tk273907-lgtm" target="_blank" rel="noopener">GitHub <span>↗</span></a>
-          <a href="https://www.linkedin.com/in/tanveer-khan-4b15a3345/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+
+        <div class="timeline">
+          <div class="timeline-item active">
+            <span class="timeline-dot"></span>
+            <div class="timeline-number">01</div>
+            <div>
+              <small>FOUNDATION</small>
+              <h3>Programming</h3>
+              <p>Strengthening Python, C/C++, logic and problem solving.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item active">
+            <span class="timeline-dot"></span>
+            <div class="timeline-number">02</div>
+            <div>
+              <small>BUILDING</small>
+              <h3>Web Development</h3>
+              <p>Creating interfaces with HTML, CSS, JavaScript and Django.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item active">
+            <span class="timeline-dot"></span>
+            <div class="timeline-number">03</div>
+            <div>
+              <small>NOW LEARNING</small>
+              <h3>Data & Machine Learning</h3>
+              <p>Working with NumPy, Pandas, mathematics and ML fundamentals.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-number">04</div>
+            <div>
+              <small>NEXT</small>
+              <h3>AI Engineering</h3>
+              <p>Building intelligent applications and deeper AI systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="education-section" id="education">
+      <div class="container education-card">
+        <div class="edu-badge">EDUCATION</div>
+        <div class="edu-main">
+          <span class="edu-year">CURRENT</span>
+          <h2>Bachelor of Computer Applications</h2>
+          <h3>Artificial Intelligence & Machine Learning</h3>
+          <p>Career Point University, Kota</p>
+        </div>
+        <div class="edu-side">
+          <span>Focus</span>
+          <strong>AI / ML</strong>
+          <span>Goal</span>
+          <strong>AI Engineer</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container contact-card">
+        <div class="contact-glow"></div>
+        <div class="contact-content">
+          <div class="section-label">
+            <span>05</span>
+            <p>Let's connect</p>
+          </div>
+          <h2>Have an idea?<br><span class="gradient-text">Let's build it.</span></h2>
+          <p>
+            I'm open to learning, collaboration, project ideas and conversations
+            around software development, AI and Machine Learning.
+          </p>
+
+          <div class="contact-actions">
+            <a href="https://github.com/tk273907-lgtm" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-icon">GH</span>
+              <span><small>GitHub</small><b>tk273907-lgtm</b></span>
+              <span>↗</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/tanveer-khan-4b15a3345/" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-icon">in</span>
+              <span><small>LinkedIn</small><b>Tanveer Khan</b></span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-code">
+          <span class="code-comment">// future_goal</span>
+          <span><b>build</b>(</span>
+          <span>&nbsp;&nbsp;<i>"useful"</i>,</span>
+          <span>&nbsp;&nbsp;<i>"intelligent"</i>,</span>
+          <span>&nbsp;&nbsp;<i>"real-world"</i></span>
+          <span>);</span>
+          <span class="code-cursor">_</span>
         </div>
       </div>
     </section>
@@ -203,8 +401,12 @@
 
   <footer>
     <div class="container footer-inner">
-      <span>© <span id="year"></span> Tanveer Khan</span>
-      <span>BCA AI/ML · Developer · Aspiring AI Engineer</span>
+      <a class="brand" href="#home">
+        <span class="brand-mark">TK</span>
+        <span>Tanveer<span class="brand-dot">.</span></span>
+      </a>
+      <p>© <span id="year"></span> Tanveer Khan. Built with curiosity & code.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
     </div>
   </footer>
 
